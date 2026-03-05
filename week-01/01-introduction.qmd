@@ -134,7 +134,7 @@ fa_list <- function(x, incremental = FALSE) {
 
 3)  Manipulating Data - *Saturday April 25th*
 
-4)  Getting and Cleaning Data - *Saturday May 2nd*
+4)  Getting and Cleaning Data - *Saturday May ??*
 
 5)  Data Visualisation - *Saturday May ??*
 

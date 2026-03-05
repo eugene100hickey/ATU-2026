@@ -24,13 +24,13 @@ include-in-header:
 :::
 
 ::: {style="font-size: 130%; list-style-position: outside; padding-left: 0em;"}
-[**Week One - Introduction to Statistical Computing**](https://atu-2025.netlify.app/week-01/#/title){target="_blank"}
+[**Week One - Introduction to Statistical Computing**](https://atu-2026.netlify.app/week-01/#/title){target="_blank"}
 
-[**Week Two - Statistical Inference**](https://atu-2025.netlify.app/week-02/#/title){target="_blank"}
+[**Week Two - Statistical Inference**](https://atu-2026.netlify.app/week-02/#/title){target="_blank"}
 
-[**Week Three - Manipulating Data**](https://atu-2025.netlify.app/week-03/#/title){target="_blank"}
+[**Week Three - Manipulating Data**](https://atu-2026.netlify.app/week-03/#/title){target="_blank"}
 
-[**Week Four - Getting and Cleaning Data**](https://atu-2025.netlify.app/week-04/#/title){target="_blank"}
+[**Week Four - Getting and Cleaning Data**](https://atu-2026.netlify.app/week-04/#/title){target="_blank"}
 
 -   [**Week Four - Getting and Cleaning Data Recording**](https://atlantictu-my.sharepoint.com/:v:/g/personal/john_keogh_associate_atu_ie/EUDU3CqRR6VGseOZU77rv7EBvDeqebAUloE-T86HxZe5HA){target="_blank"}
 
@@ -45,15 +45,15 @@ include-in-header:
 ## Recordings
 
 ::: {style="font-size: 130%; list-style-position: outside; padding-left: 0em;"}
--   [Week One Summary- April 5<sup>th</sup>](https://youtu.be/rlMQnBaWprw){target="_blank"}
+-   [Week One Summary- April 11<sup>th</sup>](){target="_blank"}
 
--   [Week Two Summary- April 12<sup>th</sup>](https://youtu.be/d5tOcWPuWI0){target="_blank"}
+-   [Week Two Summary- April 18<sup>th</sup>](){target="_blank"}
 
--   [Week Three Summary - April 26<sup>th</sup>](https://youtu.be/hWLSythOVb8){target="_blank"}
+-   [Week Three Summary - April 25<sup>th</sup>](){target="_blank"}
 
--   [Week Four Summary - May 3<sup>rd</sup>](https://youtu.be/R-q5I68DMZg){target="_blank"}
+-   [Week Four Summary - May <sup>rd</sup>](){target="_blank"}
 
--   [Week Five Class - May 10<sup>th</sup>](https://youtu.be/Tj1Uat7IDwY){target="_blank"}
+-   [Week Five Class - May <sup>th</sup>](){target="_blank"}
 
 <!-- -   [Week 4 - Quiz](https://youtu.be/5MEm0D1s3FY){target="_blank"} -->
 
