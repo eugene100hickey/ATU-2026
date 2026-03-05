@@ -1,0 +1,18 @@
+```{r setup, include = FALSE}
+## package and list of various exercises
+library("exams2forms")
+exm <- list(
+  # "excel.Rmd",
+  # "week-04/gene-data",
+  # "rexams/week-04/genomics.Rmd",
+    here::here("rexams", "week-04", "googlesheets.Rmd"),
+   here::here("rexams", "week-04", "mdb.Rmd"),
+    here::here("rexams", "week-04", "kaggle-univ-csv.Rmd"),
+  here::here("rexams", "week-04", "methane-csv.Rmd"),
+  here::here("rexams", "week-04", "noaa.Rmd")
+)
+```
+
+```{r quiz, echo = FALSE, message = FALSE, results = "asis"}
+exams2forms(exm, n = 3)
+```

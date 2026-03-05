@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="01-introduction_files/libs/clipboard/clipboard.min.js"></script>
+<script src="01-introduction_files/libs/quarto-html/tabby.min.js"></script>
+<script src="01-introduction_files/libs/quarto-html/popper.min.js"></script>
+<script src="01-introduction_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="01-introduction_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="01-introduction_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="01-introduction_files/libs/quarto-html/quarto-html-5363c96604a0db55e0fafc787385e36b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="01-introduction_files/libs/quarto-html/quarto-syntax-highlighting-a696728df169e363e4859ca3ec1ae01c.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.42">
+
+  <meta name="author" content="Eugene Hickey">
+  <meta name="dcterms.date" content="2025-04-01">
+  <title>Introduction to Statistical Computing</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="01-introduction_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="01-introduction_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="01-introduction_files/libs/revealjs/dist/theme/quarto-d58ca6e55452da357bd4996cb6e3aa10.css">
+  <link rel="stylesheet" href="assets/custom.css">
+  <link rel="stylesheet" href="assets/tachyons-addon.css">
+  <link href="01-introduction_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="01-introduction_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="01-introduction_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="01-introduction_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="01-introduction_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="01-introduction_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <link rel="shortcut icon" href="images/atu-logo.png">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="title-slide" class="slide level2 center" data-background="images/horn.JPG">
+<h2></h2>
+<div class="title-box">
+<h2>
+Introduction to Statistical Computing
+</h2>
+<p>👨‍💻 <span class="author">Eugene Hickey @ Atlantic Technological University</span> 👨‍💻</p>
+<div style="overflow: hidden; height: 1.2em;">
+<ul class="content__container__list top" style="text-align: top">
+<li class="content__item">
+<i class="fa-solid fa-envelope"></i> eugene.hickey@tudublin.ie
+</li>
+<li class="content__item">
+<i class="fa-brands fa-mastodon"></i> <span class="citation" data-cites="eugene100hickey">@eugene100hickey</span>
+</li>
+<li class="content__item">
+<i class="fa-brands fa-github"></i> github.com/eugene100hickey
+</li>
+<li class="content__item">
+<i class="fa-solid fa-globe"></i> www.fizzics.ie
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="week-one" class="slide level2">
+<h2>Week One</h2>
+<ul>
+<li><p>Welcome to the course on statistical computing.</p></li>
+<li><p>We will discuss how to make the most of your data.</p></li>
+<li><p>Complimentary to the qualitative analysis you do with Emma.</p></li>
+<li><p>Goal here is to provides skills in data analysis.</p></li>
+<li><p>We’ll learn to use a software system called <strong><em>R</em></strong>.</p></li>
+</ul>
+</section>
+<section id="acknowledgments" class="title-slide slide level1 center">
+<h1>Acknowledgments</h1>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="images/Ruth-Moran.jpg" class="absolute" style="right: 85%; width: 200px; "> <img data-src="images/quarto.jpg" class="absolute" style="bottom: 10%; right: 65%; width: 200px; "> <img data-src="images/rexams.svg" class="absolute" style="right: 65%; width: 200px; "></p>
+</div><div class="column" style="width:60%;">
+<ul>
+<li><p><a href="https://www.itsligo.ie/research/research-office/" target="_blank">Ruth Moran</a>, co-pilot for this workshop Graduate Research &amp; Education Training Officer.</p></li>
+<li><p>slides produced using <a href="https://quarto.org/" target="_blank">quarto</a></p></li>
+<li><p>assessments produced using <a href="https://www.r-exams.org/" target="_blank">Rexams</a></p></li>
+</ul>
+</div></div>
+</section>
+
+<section id="target-audience" class="title-slide slide level1 center">
+<h1>Target Audience</h1>
+<ul>
+<li><p>Graduate students looking for better ways to present their data.</p></li>
+<li><p>People currently using tools like MS Excel for analysis.</p></li>
+</ul>
+</section>
+
+<section id="why-r" class="title-slide slide level1 center">
+<h1>Why R?</h1>
+<ul>
+<li><p>Working with a mouse isn’t reproducible</p>
+<ul>
+<li>difficult to log exactly what you’ve done</li>
+<li>hard to repeat for a series of analyses</li>
+<li>difficult to be inspired by other people’s work</li>
+</ul></li>
+<li><p>Good to separate sources of data from the analysis</p></li>
+<li><p>R uses series of commands that input, manipulate, and display data</p></li>
+<li><p>Lots of contributors around the globe, diverse fields</p>
+<ul>
+<li>this is the world of open source software</li>
+</ul></li>
+</ul>
+</section>
+
+<section>
+<section id="course-outline" class="title-slide slide level1 center">
+<h1>Course Outline</h1>
+<ol type="1">
+<li><p>Introduction to Statistical Computing &amp; R - <em>Saturday April11th</em></p></li>
+<li><p>Statistical Inference - <em>Saturday April 18th</em></p></li>
+<li><p>Manipulating Data - <em>Saturday April 25th</em></p></li>
+<li><p>Getting and Cleaning Data - <em>Saturday May 2nd</em></p></li>
+<li><p>Data Visualisation - <em>Saturday May ??</em></p></li>
+</ol>
+</section>
+<section id="stuff-we-wont-be-doing" class="slide level2">
+<h2>Stuff we won’t be doing</h2>
+<ol type="1">
+<li><p>creating functions, iterating</p></li>
+<li><p>R is cracker at machine learning</p></li>
+<li><p>also great at making documents and presentations using <a href="https://quarto.org/" target="_blank">quarto</a></p></li>
+<li><p>and websites and blogs</p></li>
+</ol>
+</section>
+<section id="assessment" class="slide level2">
+<h2>Assessment</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><span style="color: darkred; font-weight: bold;">Weekly online quizzes</span>
+<ul>
+<li>get three attempts</li>
+<li>best mark from the three</li>
+<li>some multiple choice, some open answer</li>
+<li>based on this weeks lecture</li>
+</ul></li>
+<li><span style="color: darkred; font-weight: bold;">Exercises to be done within R</span>
+<ul>
+<li>these are called <code>swirl()</code></li>
+<li>email results to me (screenshot of final page is fine)</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:40%;">
+<ul>
+<li><span style="color: darkred; font-weight: bold;">Project at end of course</span>
+<ul>
+<li>somewhat optional, can either do one on Emma’s section or on this part, or a combination</li>
+<li>best to do something associated with your research that can be useful beyond this module</li>
+</ul></li>
+</ul>
+</div></div>
+</section></section>
+<section id="resources" class="title-slide slide level1 center">
+<h1>Resources</h1>
+<ul>
+<li><a href="https://www.bigbookofr.com/index.html" target="_blank">Big Book of R</a></li>
+</ul>
+</section>
+
+<section id="books" class="title-slide slide level1 center">
+<h1>Books</h1>
+<ul>
+<li><em>recommended text</em></li>
+<li><a href="https://r4ds.had.co.nz/" target="_blank">Hadley’s book, R for Data Science</a></li>
+<li><a href="https://www.epirhandbook.com/en/index.html" target="_blank">The Epidemiologist R Handbook</a></li>
+<li><a href="https://datascienceineducation.com/" target="_blank">Data Science in Education Using R</a></li>
+<li><a href="https://clauswilke.com/dataviz/" target="_blank">Fundamentals of Data Visualization by Wilke</a>, lots of his actual code is on github at <a href="https://github.com/clauswilke/practical_ggplot2" target="_blank">https://github.com/clauswilke/practical_ggplot2</a></li>
+<li>Data Visualization by Kieran Healy (ISBN = 978-0691181622). ~€25. Also online at <a href="https://socviz.co/index.html" target="_blank">https://socviz.co/index.html</a></li>
+<li>check out the list of online books at <a href="https://bookdown.org/" target="_blank">bookdown.org</a></li>
+</ul>
+<p><img data-src="images/hadley.jpg" class="absolute" style="bottom: 10px; right: 10px; width: 100px; "></p>
+</section>
+
+<section id="websites" class="title-slide slide level1 center">
+<h1>Websites</h1>
+<ul>
+<li><p>Karl Broman (https://www.biostat.wisc.edu/~kbroman/), and particularly <a href="https://www.biostat.wisc.edu/~kbroman/presentations/graphs_MDPhD2014.pdf" target="_blank">this presentation</a></p></li>
+<li><p>course by Boemhke on github <a href="https://github.com/uc-r/Intro-R" target="_blank">github.com/uc-r/Intro-R</a></p></li>
+<li><p>the good people at RStudio have lots of help at <a href="https://posit.co/" target="_blank">https://posit.co/</a></p></li>
+<li><p><a href="https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/" target="_blank">Cedric</a>.</p></li>
+<li><p><a href="https://www.r-graph-gallery.com/index.html" target="_blank">The R Graph Gallery</a> is pretty good and worth checking out</p></li>
+</ul>
+<p><img data-src="https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg" class="absolute" style="bottom: 10px; right: 10px; width: 100px; "></p>
+</section>
+
+<section id="blogs-and-podcasts" class="title-slide slide level1 center">
+<h1>Blogs and Podcasts</h1>
+<ul>
+<li><p><a href="https://simplystatistics.org/" target="_blank">www.simplystatistics.org</a></p></li>
+<li><p><a href="http://varianceexplained.org/" target="_blank">varianceexplained.org</a></p></li>
+<li><p><a href="http://nssdeviations.com/" target="_blank">Not So Standard Deviations</a></p></li>
+<li><p><a href="https://github.com/thomasp85/ggplot2_workshop" target="_blank">Thomas Lin Pedersen video</a></p></li>
+<li><p><a href="https://www.youtube.com/@safe4democracy/streams" target="_blank">David Robinson’s screencasts</a></p></li>
+</ul>
+<p><img data-src="images/hillary.jpeg" class="absolute" style="bottom: 10px; right: 10px; width: 100px; "></p>
+</section>
+
+<section id="online-courses" class="title-slide slide level1 center">
+<h1>Online Courses</h1>
+<ul>
+<li><p>Coursera: <a href="https://www.coursera.org/specializations/jhu-data-science" target="_blank">Data Science from Johns Hopkins</a>. The course notes are on <a href="http://datasciencespecialization.github.io/" target="_blank">github</a></p></li>
+<li><p>edx.org <a href="https://www.edx.org/course/data-science-visualization" target="_blank">course from Irizarry</a></p></li>
+</ul>
+<p><img data-src="../images/rafael.jpg" class="absolute" style="bottom: 10px; right: 10px; width: 100px; "></p>
+</section>
+
+<section id="miscellaneous" class="title-slide slide level1 center">
+<h1>Miscellaneous</h1>
+<ul>
+<li><p><a href="https://rladies.org/" target="_blank">R Ladies+</a></p></li>
+<li><p><a href="https://rweekly.org/" target="_blank">RWeekly.org</a>, round up of events in the world of R</p></li>
+<li><p><a href="https://mastodon.social/tags/rstats" target="_blank">#Rstats on</a> <span style="text-decoration:line-through;">twitter</span> <a href="https://mastodon.social/tags/rstats">Mastodon</a></p></li>
+<li><p><a href="https://twitter.com/search?q=%23TidyTuesday&amp;src=typeahead_click" target="_blank">#TidyTuesday</a> on twitter</p></li>
+<li><p><a href="https://rstudio.com/resources/cheatsheets/" target="_blank">R Cheatsheets</a></p></li>
+<li><p>if you get stuck, google is your friend. Often sends you to stackoverflow.com or stackexchange.com</p></li>
+</ul>
+</section>
+
+<section>
+<section id="installing-r-and-rstudio" class="title-slide slide level1 center">
+<h1>Installing R and RStudio</h1>
+<ul>
+<li><p>first R from <a href="https://cran.r-project.org/" target="_blank">CRAN</a></p>
+<ul>
+<li><strong>R</strong> is the engine</li>
+</ul></li>
+<li><p>then RStudio from <a href="https://posit.co/download/rstudio-desktop/" target="_blank">Posit</a></p>
+<ul>
+<li><strong>RStudio</strong> is the cockpit</li>
+</ul></li>
+<li><p>alternative is to make an account at <a href="https://posit.cloud/" target="_blank">Posit Cloud</a></p>
+<ul>
+<li>give 25 hours per month</li>
+</ul></li>
+<li><p>R is case sensitive</p></li>
+<li><p><a href="https://learnr-examples.shinyapps.io/ex-setup-r/#section-welcome" target="_blank">This</a> is a nice tutorial suite to explain installing R and RStudio:</p></li>
+</ul>
+</section>
+<section id="rstudio-screen" class="slide level2">
+<h2>RStudio Screen</h2>
+<p><img data-src="images/rstudio.png" class="absolute" style="top: 50px; right: 10px; width: 70%; "></p>
+</section>
+<section id="using-rstudio" class="slide level2">
+<h2>Using RStudio</h2>
+<ul>
+<li>toolbar across the top
+<ul>
+<li>I don’t use this very much</li>
+</ul></li>
+<li>set of quick links below that
+<ul>
+<li>top left (green plus sign) is about the only one I use</li>
+</ul></li>
+<li>4 Panes
+<ul>
+<li>top left for files or looking at data</li>
+<li>bottom left for the console</li>
+<li>top right for <em>Environment</em> - tells what variables are stored</li>
+<li>bottom right for plots and help</li>
+</ul></li>
+</ul>
+</section>
+<section id="using-rstudio-continued" class="slide level2">
+<h2>Using RStudio (continued)</h2>
+<ul>
+<li>usual work flow is:
+<ul>
+<li>try commands out at the console (bottom left)</li>
+<li>when that works, store them in a file (top left)</li>
+<li>when sequence of commands works, put them into a document (also top left)</li>
+</ul></li>
+</ul>
+</section>
+<section id="extending-r" class="slide level2">
+<h2>Extending R</h2>
+<ul>
+<li>installing R just gives you <em>base</em> R</li>
+<li>beauty of this tool lies with <em>packages</em> 📦</li>
+<li>we’ll look at installing these from three sources:
+<ul>
+<li>CRAN</li>
+<li>Bioconductor</li>
+<li>github</li>
+</ul></li>
+</ul>
+</section>
+<section id="cran" class="slide level2">
+<h2>CRAN</h2>
+<ul>
+<li><a href="https://cran.r-project.org/" target="_blank">CRAN</a>
+<ul>
+<li>example, on console type <code>install.packages("palmerpenguins")</code></li>
+<li>this installs the <em>palmerpenguins</em> package (we’ll need this for this week’s quiz)</li>
+<li>over 20k packages on CRAN (see list <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html" target="_blank">here</a>)</li>
+<li>sometimes esoteric (<a href="https://github.com/jalapic/engsoccerdata" target="_blank">engsoccerdata</a>)</li>
+<li>sometimes cutting edge (<a href="https://tensorflow.rstudio.com/" target="_blank">deep learning</a>)</li>
+<li>each package heavily curated and maintained</li>
+<li><a href="https://cran.r-project.org/" target="_blank">Task Views</a> good place to start looking</li>
+</ul></li>
+</ul>
+</section>
+<section id="bioconductor" class="slide level2">
+<h2>Bioconductor</h2>
+<ul>
+<li><a href="https://www.bioconductor.org/" target="_blank">Bioconductor</a>
+<ul>
+<li>set of bioinformatics packages (lots of genomics)</li>
+<li>start with <code>install.packages("BiocManager")</code></li>
+<li>then <code>BiocManager::install("some_genomics_package")</code> to use</li>
+<li>list of packages <a href="http://bioconductor.org/packages/release/BiocViews.html" target="_blank">here</a></li>
+<li>about 3,000 packages, including genome builds</li>
+</ul></li>
+</ul>
+</section>
+<section id="github" class="slide level2">
+<h2>Github</h2>
+<ul>
+<li>github
+<ul>
+<li>packages in development</li>
+<li>start with <code>install.packages("devtools")</code></li>
+<li>then <code>devtools::install_github("developer_name/package_name")</code></li>
+<li>almost 80k packages <a href="https://github.com/qinwf/awesome-R" target="_blank">here</a></li>
+<li>the package <a href="https://github.com/hoxo-m/githubinstall" target="_blank">githubinstall</a> is useful to search these</li>
+</ul></li>
+</ul>
+</section>
+<section id="installing-packages" class="slide level2">
+<h2>Installing Packages</h2>
+<ul>
+<li>try <code>install.packages("scales")</code>
+<ul>
+<li>will add functions from someone else’s work so you can use it</li>
+<li>need to do this just once</li>
+<li>to actually make this available, type <code>library(scales)</code></li>
+<li>do this every time you start R and want to use <em>scales</em> package</li>
+</ul></li>
+<li>one package we’ll need is <em>tidyverse</em>, <code>install.packages("tidyverse")</code>
+<ul>
+<li>this might take a few minutes because such a large collection of packages</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ol type="1">
+<li>Using the Console</li>
+<li>Storing Values</li>
+<li>Fundamental Data Types</li>
+<li>The Dataframe - Rows <span class="math inline">\(\times\)</span> Columns</li>
+<li>Dataframe Columns</li>
+<li>Subsets of Dataframes</li>
+<li>Small Useful Functions</li>
+</ol>
+</section>
+<section id="using-the-console" class="slide level2">
+<h2>Using the Console</h2>
+<ul>
+<li>R is a calculator</li>
+<li>can type, say, <code>45 + 17</code> and get the answer back</li>
+<li><em>*</em> is multiply, <em>/</em> is divide</li>
+<li>get constants like <em>pi</em> for <span class="math inline">\(\pi\)</span></li>
+<li>can run functions from the console like, say, <code>sqrt(x=49)</code> (or just <code>sqrt(49)</code>)</li>
+<li>can get help on these functions by typing, say, <code>?sqrt</code></li>
+<li>to get list of help in the base package try <code>base::</code> and then press <em>tab</em></li>
+</ul>
+</section>
+<section id="storing-values" class="slide level2">
+<h2>Storing Values</h2>
+<ul>
+<li>results of calculations can be stored</li>
+<li>do this with <code>my_square_root_result &lt;- sqrt(49)</code></li>
+<li>the <code>&lt;-</code> reads as <em>gets</em> (can also us equals sign, <em>=</em>, but that’s sloppy)</li>
+<li>keyboard short cut for <em>&lt;-</em> is <em>alt</em> and <em>-</em> simultaneously</li>
+<li>full list of RStudio shortcuts in <em>Help</em> on the toolbar (ironically, of course, there is a keyboard shortcut for keyboard shortcuts help)</li>
+<li>list of stored values given in the <em>Environment</em> tab of RStudio</li>
+</ul>
+</section>
+<section id="fundamental-data-types" class="slide level2">
+<h2>Fundamental Data Types</h2>
+<ul>
+<li><em>numeric</em> (or <em>double</em>) is for numbers with decimals. Default for numbers.</li>
+<li><em>integer</em> for counting numbers. Type in <code>x &lt;- 72L</code> to get integer 72</li>
+<li><em>logical</em> gives <em>TRUE</em> and <em>FALSE</em></li>
+<li><em>character</em> gives text. Try typing <code>x &lt;- "I am Groot"</code>.
+<ul>
+<li>Equivalent is <code>x &lt;- 'I am Groot'</code></li>
+</ul></li>
+<li><em>complex</em> is for stuff like <em>14 + 3i</em>. I’ve never used these. Ironically <code>sqrt(-1)</code> gives an error rather than <em>i</em></li>
+<li><em>factor</em>. These deserve fuller explanation and get a slide of their own.</li>
+</ul>
+</section>
+<section id="factors" class="slide level2">
+<h2>Factors</h2>
+<ul>
+<li>super useful when only limited number of possible values for a variable</li>
+<li>examples like <em>female</em> / <em>male</em> or <em>Alabama</em> / <em>Alaska</em> / …. <em>Wyoming</em></li>
+<li>possible values are called <em>levels</em></li>
+<li>levels have an order, default is alphabetical but can adjust this</li>
+<li><em>forcats</em> package in the tidyverse deals with factors</li>
+<li>have big impact on figures
+<ul>
+<li>figures will look different depending on whether a variable is a factor or a character</li>
+<li>legend will be in the order of levels of a factor</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>can change between data types using the <em>as.</em> functions
+<ul>
+<li>e.g.&nbsp;<code>as.character()</code>, <code>as.numeric()</code></li>
+<li>check out all the function in <em>forcats</em> for dealing with factors</li>
+</ul></li>
+<li>can figure out the data type using the <code>class()</code> function</li>
+</ul>
+</section>
+<section id="data-frames" class="slide level2">
+<h2>Data Frames</h2>
+<ul>
+<li>these are the workhorse of R data types</li>
+<li>look like spreadsheets</li>
+<li>we’ll work with them a lot</li>
+<li>organised by <em>rows</em> (across) and <em>columns</em> (down)</li>
+<li>each column must have the same type</li>
+<li>can examine data frames using the <code>View()</code> function (note, capital “V”)</li>
+<li>can find column names using the <code>names()</code> function</li>
+<li>related concepts are <em>tibbles</em> and <em>data.tables</em></li>
+</ul>
+</section>
+<section id="subsets-of-data-frames" class="slide level2">
+<h2>Subsets of Data Frames</h2>
+<ul>
+<li>can access individual column elements by specifying the row and column position
+<ul>
+<li>e.g.&nbsp;<code>mtcars[2, 5]</code> is the 2nd row of the fifth column</li>
+</ul></li>
+<li>can access an entire row by leaving the column part blank
+<ul>
+<li>e.g.&nbsp;<code>mtcars[2, ]</code> is the whole 2nd row</li>
+</ul></li>
+<li>likewise get the entire column by leaving the row slot empty
+<ul>
+<li>e.g.&nbsp;<code>mtcars[,5]</code> is the entire 5th column</li>
+</ul></li>
+</ul>
+</section>
+<section id="subsets-of-data-frames-1" class="slide level2">
+<h2>Subsets of Data Frames</h2>
+<ul>
+<li>can also access columns using the dollar sign, <strong>$</strong>
+<ul>
+<li>e.g.&nbsp;<code>mtcars$cyl</code> gives the 2nd column, called <em>cyl</em><br>
+</li>
+<li>note <code>mtcars$cyl[2]</code> gives the second element of this</li>
+</ul></li>
+<li>can use a number range using <em>:</em> to get a bunch of values
+<ul>
+<li>e.g.&nbsp;<code>mtcars[1:4, 2:4]</code> takes a chunk of the mtcars data frame</li>
+</ul></li>
+</ul>
+</section>
+<section id="lists" class="slide level2">
+<h2>Lists</h2>
+<ul>
+<li><p>dataframes have constraints</p>
+<ul>
+<li><p>all columns must be the same type</p></li>
+<li><p>rows and columns must be the same length</p></li>
+</ul></li>
+<li><p><code>lists</code> are more general</p></li>
+<li><p>example, <code>list_data &lt;- list(c("Jan","Feb","Mar"), matrix(c(3,9,5,1,-2,8), nrow = 2),    list("green",12.3))</code></p></li>
+<li><p><code>list_data[[1]]</code> gives the three months, etc</p>
+<ul>
+<li>note the double square bracket,<code>[[ ]]</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="some-useful-functions" class="slide level2">
+<h2>Some Useful Functions</h2>
+<ul>
+<li><code>c()</code> let’s you create a vector of quantities. Coerced to same type</li>
+<li><code>is.na()</code> to check if a missing value, <code>sum(is.na())</code> gives total of these</li>
+<li><code>dim()</code> gives number of rows / columns in data frame, also <code>length()</code></li>
+<li><code>class()</code> for nature of variable</li>
+<li><code>summary()</code>, <code>str()</code>, <code>glimpse()</code> show data frame parameters. Also <code>skim()</code> from the <em>skimr</em> package</li>
+<li>I use <code>%in%</code> quite a bit, checks if value is among a bunch of values
+<ul>
+<li><code>"August" %in% month.name</code></li>
+<li><code>"£" %in% letters</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="some-useful-functions-1" class="slide level2">
+<h2>Some Useful Functions</h2>
+<ul>
+<li><code>Sys.date()</code>, <code>Sys.time()</code></li>
+<li><code>ls()</code> gives list of variables</li>
+<li><code>file.list()</code> gives list of files</li>
+<li><code>sessionInfo()</code> tells you what packages are loaded</li>
+<li><code>citation()</code> tells you about a package</li>
+<li><code>mean()</code> calculates mean of a vector, <code>sd()</code> the standard deviation</li>
+<li><code>complete.cases()</code> returns <code>TRUE</code> if there are no missing values in a row</li>
+</ul>
+</section>
+<section id="and-some-weird-characters" class="slide level2">
+<h2>And Some Weird Characters</h2>
+<ul>
+<li>get to use a lot of the keyboard in R
+<ul>
+<li>we’ve seen <code>$</code> to extract a column of a data frame</li>
+<li><code>()</code> are arguments to functions</li>
+<li><code>[]</code> are gateways to data frame elements</li>
+<li><code>%&gt;%</code> is called the pipe and is really cool. <em>Ctrl + Shift + M</em> shortcut</li>
+<li>some logical operators: <code>!</code> is NOT, <code>|</code> (or <code>||</code>) is OR, <code>&amp;</code> (or <code>&amp;&amp;</code>) is AND</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="workshop---week-one" class="title-slide slide level1 center">
+<h1>Workshop - Week One</h1>
+
+</section>
+<section id="perform-the-following-tasks" class="slide level2">
+<h2>Perform the Following Tasks:</h2>
+<div style="font-size: 50%; list-style-position: outside; padding-left: 0em;">
+<ol type="1">
+<li><p>multiply the numbers <span class="math inline">\(25\times \pi\)</span> and save the result to my_first_result</p></li>
+<li><p>make a vector of five numbers e.g.&nbsp;34.1, 54.4, 71.5, 93.8, 22.6 and save them to my_second_result</p></li>
+<li><p>multiply my_second_result by 7 and print the results</p></li>
+<li><p>print the <code>airquality</code> dataset</p></li>
+<li><p>examine the <code>airquality</code> dataset using <code>summary()</code>, <code>str()</code>, and <code>glimpse()</code>. For the latter you’ll need the <em>tidyverse</em> library.</p></li>
+<li><p>store the values of <code>Temp</code> from the <code>airquality</code> dataset in a new variable you can call <code>temperature</code></p></li>
+<li><p>calculate the <code>mean()</code> of <code>temperature</code></p></li>
+<li><p>calculate the standard deviation, <code>sd()</code>, of <code>temperature</code></p></li>
+<li><p>find the names of the columns in the <code>Puromycin</code> dataset</p></li>
+<li><p>look up the help for the <code>USJudgeRatings</code> dataset and find out what is meant by the “DECI” column name</p></li>
+<li><p>install and load up the package <em>dslabs</em>. Use <code>is.na()</code> and <code>sum()</code> to find the number of missing values in the <code>us_contagious_diseases</code> dataset</p></li>
+<li><p>what kind of variable is stored in <code>olive$area</code>?</p></li>
+<li><p>what are the levels of the factor in <code>olive$region</code>?</p></li>
+</ol>
+</div>
+</section>
+<section id="assignments---week-one" class="slide level2">
+<h2>Assignments - Week One</h2>
+<ol type="1">
+<li><p>Complete week one moodle quiz</p></li>
+<li><p>Complete <code>swirl()</code> exercises</p></li>
+</ol>
+<div style="font-size: 80%; margin-left: 150px;">
+<ul>
+<li><p><code>install.packages("swirl")</code></p></li>
+<li><p><code>library(swirl)</code></p></li>
+<li><p><code>install_course("R Programming E")</code></p></li>
+<li><p><code>swirl()</code></p></li>
+<li><p>choose course <em>R Programming: The basics of programming in R</em></p></li>
+<li><p>do the four exercises 1 (basic Building Blocks) to 4 (Vectors)</p></li>
+<li><p>email the results to eugene.hickey@associate.atu.ie</p></li>
+</ul>
+</div>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="images/atu-logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p><a href="https://vlesligo.atu.ie">Statistical Computing</a></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="01-introduction_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="01-introduction_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/multiplex/socket.io.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/multiplex/multiplex.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="01-introduction_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="01-introduction_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'multiplex': {"secret":null,"id":"785f476c5b600fe6","url":"https://reveal-multiplex.glitch.me/"},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'fast',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    <link rel="stylesheet" href="assets/syntax-highlight.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="../assets/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+    
+
+</body></html>

@@ -1,0 +1,67 @@
+```{r data generation, echo = FALSE, results = "hide", message=F, warning=F}
+library(exams)
+library(tidyverse)
+
+
+new_url <- "https://www.atu.ie/"
+
+answer_list <- tribble(~feature, ~node,
+                       "Student Hub", ".menu-item-47 a",
+                       "Staff Hub", ".menu-item-48 a",
+                       "Events", ".menu-item-49 a",
+                       "Connect", ".menu-item-55 .has-menu",
+                       "Upcoming Events", ".m-b-1",
+                       "Research and Innovation", ".cell:nth-child(2) li:nth-child(1) .text",
+                       "IT Services", ".cell:nth-child(1) li:nth-child(3) .text",
+                       "Campus Locations", ".hide-for-small-only .text"
+                       )
+
+
+
+index <- sample(1:8, 1)
+other_index <- c(1:8)[!(1:8 %in% index)]
+question <- answer_list$feature[index]
+answer <- answer_list$node[index]
+
+other_answers <- answer_list$node[other_index] |> 
+  sample(5)
+
+solution <- c(answer, other_answers)
+
+```
+
+
+Question
+========
+Examine the ATU webpage for  __`r new_url`__. Which is the correct __css__ selector for __`r question`__? 
+
+Answerlist
+----------
+* `r solution[1]`
+* `r solution[2]`
+* `r solution[3]`
+* `r solution[4]`
+* `r solution[5]`
+* `r solution[6]`
+
+
+Solution
+========
+Either use `Ctrl+U` to examine the html code for the webpage, or more simply, use the __*Selector Gagdet*__ browser plugin.
+
+Answerlist
+----------
+* True
+* False
+* False
+* False
+* False
+* False
+
+
+Meta-information
+================
+exname: R selector-gadget
+extype: schoice
+exsolution: 100000
+exshuffle: 5
