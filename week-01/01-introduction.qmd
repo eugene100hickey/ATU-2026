@@ -201,11 +201,11 @@ fa_list <- function(x, incremental = FALSE) {
 
 # Blogs and Podcasts
 
--   [www.simplystatistics.org](https://simplystatistics.org/){target="_blank"}
+-   [r-bloggers.com](https://www.r-bloggers.com/){target="_blank"}
 
--   [varianceexplained.org](http://varianceexplained.org/){target="_blank"}
+-   [Yihui](https://yihui.org/en/){target="_blank"}
 
--   [Not So Standard Deviations](http://nssdeviations.com/){target="_blank"}
+-   [Posit Conference](https://www.youtube.com/playlist?list=PL9HYL-VRX0oTixlfDPCS5RW_F1pccERRe){target="_blank"}
 
 -   [Thomas Lin Pedersen video](https://github.com/thomasp85/ggplot2_workshop){target="_blank"}
 
@@ -251,7 +251,7 @@ fa_list <- function(x, incremental = FALSE) {
 
 -   R is case sensitive
 
--   [This](https://learnr-examples.shinyapps.io/ex-setup-r/#section-welcome){target="_blank"} is a nice tutorial suite to explain installing R and RStudio:
+-   [This](https://rstudio-education.github.io/hopr/starting.html){target="_blank"} is a nice tutorial suite to explain installing R and RStudio:
 
 ## RStudio Screen
 
@@ -317,7 +317,7 @@ fa_list <- function(x, incremental = FALSE) {
 ## Installing Packages
 
 -   try `install.packages("scales")`
-    -   will add functions from someone else's work so you can use it
+    -   will add functions from someone else's work so you can use them
     -   need to do this just once
     -   to actually make this available, type `library(scales)`
     -   do this every time you start R and want to use *scales* package
