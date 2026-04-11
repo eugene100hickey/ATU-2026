@@ -45,7 +45,7 @@ include-in-header:
 ## Recordings
 
 ::: {style="font-size: 130%; list-style-position: outside; padding-left: 0em;"}
--   [Week One Summary- April 11<sup>th</sup>](){target="_blank"}
+-   [Week One Summary- April 11<sup>th</sup>](https://youtu.be/eHCppWN82tk){target="_blank"}
 
 -   [Week Two Summary- April 18<sup>th</sup>](){target="_blank"}
 
