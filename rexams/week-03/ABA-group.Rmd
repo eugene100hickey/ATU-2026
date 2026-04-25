@@ -6,8 +6,8 @@ library(showtext)
 
 font_add_google(name = "Caveat", family = "Caveat")
 showtext_auto()
-
-z <- read_rds("https://github.com/eugene100hickey/ATU-2023/blob/main/rexams/data/ABAData?raw=true")
+my_file <- "https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/ABAData"
+z <- read_rds(my_file)
 
 genes <- unique(z$hgnc_symbol) |> 
   sample(2)
@@ -35,7 +35,7 @@ Question
 ========
 Run the code line below to read in a data frame called `brain_gene_expression`. 
 
-`brain_gene_expression <- read_rds("https://github.com/eugene100hickey/ATU-2023/blob/main/rexams/data/ABAData?raw=true") |> 
+`brain_gene_expression <- read_rds("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/ABAData") |> 
   filter(hgnc_symbol %in% c("`r {genes[1]}`", "`r {genes[2]}`"))`
 
 Use `group_by()` and `summarise()` to calculate the mean gene expression for each gene for each age category. Use this to fill out the table below.

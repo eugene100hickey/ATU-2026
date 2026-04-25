@@ -2,8 +2,8 @@
 library(exams)
 library(tidyverse)
 
-gene_data <- read_rds("https://github.com/eugene100hickey/ATU-2023/blob/main/rexams/data/ABA-adult?raw=true")
-brain_data <- read_rds("https://github.com/eugene100hickey/ATU-2023/blob/main/rexams/data/brain-area-code?raw=true")
+gene_data <- read_rds("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/ABA-adult")
+brain_data <- read_rds("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/brain-area-code")
 my_brain_area <- brain_data$brain_area |> sample(1)
 
 z1 <- gene_data |> 
@@ -21,8 +21,8 @@ Question
 Run the code lines below to read in two data frames called `gene_data` and `brain_data`. 
 
 ```{r eval=FALSE}
-gene_data <- read_rds("https://github.com/eugene100hickey/ATU-2023/blob/main/rexams/data/ABA-adult?raw=true")
-brain_data <- read_rds("https://github.com/eugene100hickey/ATU-2023/blob/main/rexams/data/brain-area-code?raw=true")
+gene_data <- read_rds("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/ABA-adult")
+brain_data <- read_rds("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/brain-area-code")
 ```
 
 Then join these two data frames together to make one where the first few rows look like this:

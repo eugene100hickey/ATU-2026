@@ -32,7 +32,7 @@ include-in-header:
 
 [**Week Four - Getting and Cleaning Data**](https://atu-2026.netlify.app/week-04/#/title){target="_blank"}
 
--   [**Week Four - Getting and Cleaning Data Recording**](https://atlantictu-my.sharepoint.com/:v:/g/personal/john_keogh_associate_atu_ie/EUDU3CqRR6VGseOZU77rv7EBvDeqebAUloE-T86HxZe5HA){target="_blank"}
+- [**Week Four - Getting and Cleaning Data Recording**](https://atlantictu-my.sharepoint.com/:v:/g/personal/john_keogh_associate_atu_ie/EUDU3CqRR6VGseOZU77rv7EBvDeqebAUloE-T86HxZe5HA){target="_blank"}
 
 [**Week Five - Data Visualisation**](https://atu-2025.netlify.app/week-05/){target="_blank"}
 :::
@@ -45,15 +45,15 @@ include-in-header:
 ## Recordings
 
 ::: {style="font-size: 130%; list-style-position: outside; padding-left: 0em;"}
--   [Week One Summary- April 11<sup>th</sup>](https://youtu.be/eHCppWN82tk){target="_blank"}
+- [Week One Summary- April 11<sup>th</sup>](https://youtu.be/eHCppWN82tk){target="_blank"}
 
--   [Week Two Summary- April 18<sup>th</sup>](https://youtu.be/qrtN6OSDq1g){target="_blank"}
+- [Week Two Summary- April 18<sup>th</sup>](https://youtu.be/qrtN6OSDq1g){target="_blank"}
 
--   [Week Three Summary - April 25<sup>th</sup>](){target="_blank"}
+- [Week Three Summary - April 25<sup>th</sup>](https://youtu.be/dmQpCfzyias){target="_blank"}
 
--   [Week Four Summary - May <sup>rd</sup>](){target="_blank"}
+- [Week Four Summary - May <sup>rd</sup>](){target="_blank"}
 
--   [Week Five Class - May <sup>th</sup>](){target="_blank"}
+- [Week Five Class - May <sup>th</sup>](){target="_blank"}
 
 <!-- -   [Week 4 - Quiz](https://youtu.be/5MEm0D1s3FY){target="_blank"} -->
 

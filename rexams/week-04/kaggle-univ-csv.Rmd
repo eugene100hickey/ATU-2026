@@ -2,7 +2,7 @@
 library(exams)
 library(tidyverse)
 
-z <- read_csv("https://raw.githubusercontent.com/eugene100hickey/ATU-2023/main/rexams/data/university-rankings-kaggle.csv")
+z <- read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/university-rankings-kaggle.csv")
 
 country <- table(z$country)
 country <- country[country > 5]
@@ -15,12 +15,12 @@ solution <- country[my_country]
 
 Question
 ========
-Read in the _csv_ file located at `"https://raw.githubusercontent.com/eugene100hickey/ATU-2023/main/rexams/data/university-rankings-kaggle.csv"`. This gives university rankings for 2023. How many universities from `r my_country` are present in this dataset?
+Read in the _csv_ file located at `"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/university-rankings-kaggle.csv"`. This gives university rankings for 2023. How many universities from `r my_country` are present in this dataset?
 
 
 Solution
 ========
-Use `read_csv("https://raw.githubusercontent.com/eugene100hickey/ATU-2023/main/rexams/data/university-rankings-kaggle.csv")` followed by `table(my_file_name$country)`.
+Use `read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/university-rankings-kaggle.csv")` followed by `table(my_file_name$country)`.
 
 
 

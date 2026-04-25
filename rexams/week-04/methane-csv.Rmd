@@ -2,7 +2,7 @@
 library(exams)
 library(tidyverse)
 
-z <- read_csv("https://raw.githubusercontent.com/eugene100hickey/ATU-2023/main/rexams/data/Methane.csv")
+z <- read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")
 
 z <- z |> 
   group_by(type, region) |> 
@@ -24,12 +24,12 @@ solution <- z |>
 
 Question
 ========
-Read in the _csv_ file located at `"https://raw.githubusercontent.com/eugene100hickey/ATU-2023/main/rexams/data/Methane_final.csv"`. This gives global methane emissions for  (mostly) 2022. Calculate the total emissions due to *__`r  my_type`__* from *__`r my_region`__*.
+Read in the _csv_ file located at `"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"`. This gives global methane emissions for  (mostly) 2022. Calculate the total emissions due to *__`r  my_type`__* from *__`r my_region`__*.
 
 
 Solution
 ========
-Use `read_csv("https://raw.githubusercontent.com/eugene100hickey/ATU-2023/main/rexams/data/Methane_final.csv")` followed by `group_by(type, region) |> summarise(total = sum(emissions)) |> ungroup()`.
+Use `read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")` followed by `group_by(type, region) |> summarise(total = sum(emissions)) |> ungroup()`.
 
 
 
