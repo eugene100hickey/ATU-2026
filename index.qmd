@@ -32,7 +32,6 @@ include-in-header:
 
 [**Week Four - Getting and Cleaning Data**](https://atu-2026.netlify.app/week-04/#/title){target="_blank"}
 
-- [**Week Four - Getting and Cleaning Data Recording**](https://atlantictu-my.sharepoint.com/:v:/g/personal/john_keogh_associate_atu_ie/EUDU3CqRR6VGseOZU77rv7EBvDeqebAUloE-T86HxZe5HA){target="_blank"}
 
 [**Week Five - Data Visualisation**](https://atu-2025.netlify.app/week-05/){target="_blank"}
 :::
