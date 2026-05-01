@@ -406,6 +406,7 @@ extract_tables(organ_transplant, output = "data.frame", pages = 2) |> pluck(1) |
 ::: {style="font-size: 65%; list-style-position: outside; padding-left: 0em;"}
 
 
+
 (@) Install the `eurostat` package. Search for datasets on *education* using the `search_eurostat()` function. Get the *eurostat* dataset on __"Quality of education"__ (the code should be __"med_ps24"__). Decode the column values using `get_eurostat_dic()` (e.g. `get_eurostat_dic("indic_md")`). 
 Find the [*Annual*]{.underline},  [*Proportion of youth (20-24 years) having attained ISCED 3 level, total (%)*]{.underline} in [*Palestine*]{.underline} in [*2014*]{.underline}. __[40%]__
 
@@ -413,7 +414,7 @@ Find the [*Annual*]{.underline},  [*Proportion of youth (20-24 years) having att
 
 (@)  Install **Selector Gadget** as a Chrome extension. Go to the [RTE  website](https://www.rte.ie/). Find the *css* selector for the top navigation bar (where it says *"News Sport Entertainment..."*). __[".primary-bar__nav__link""]__
 
-(@) Go to the wikipedia page for the [English Premier League Season 2024/2025](https://en.wikipedia.org/wiki/2024%E2%80%9325_Premier_League){target="_blank"}. Find the css selector for the team that qualified for the _Europa League_ (should be something like "**tr:nth-child(6) .infobox-data a:nth-child(1)**"). Use `read_html()`, `html_elements()`, and `html_text2()` from the `rvest` package to find the best goalkepper for this season. __[Aston Villa]__
+(@) Go to the wikipedia page for the [English Premier League Season 2024/2025](https://en.wikipedia.org/wiki/2024%E2%80%9325_Premier_League){target="_blank"}. Find the css selector for the team that qualified for the _Europa League_ (should be something like "**tr:nth-child(6) .infobox-data a:nth-child(1)**"). Use `read_html()`, `html_elements()`, and `html_text2()` from the `rvest` package to find the team that qualified. __[Aston Villa]__
 
 :::
 
