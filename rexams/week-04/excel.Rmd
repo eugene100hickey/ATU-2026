@@ -4,7 +4,7 @@ library(tidyverse)
 library(readxl)
 
 file_name <- here::here("rexams", "data", "excel-example.xlsx")
-file_link <- "https://github.com/eugene100hickey/ATU-2025/blob/main/rexams/data/excel-example.xlsx?raw=true"
+file_link <- "https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/excel-example.xlsx"
 my_sheet <- excel_sheets(file_name) |> 
   sample(1)
 

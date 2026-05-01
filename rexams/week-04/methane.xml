@@ -4,7 +4,7 @@
 
 <question type="category">
 <category>
-<text>$course$/methane-moodle/Exercise 1</text>
+<text>$course$/methane/Exercise 1</text>
 </category>
 </question>
 
@@ -12,880 +12,6 @@
 <question type="numerical">
 <name>
 <text> R01 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>North America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>41.8</text>
-<tolerance>0.0836</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R02 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Europe</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>21.2</text>
-<tolerance>0.0424</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R03 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>World</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>267</text>
-<tolerance>0.534</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R04 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>North America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.635</text>
-<tolerance>0.00127</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R05 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>World</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>142</text>
-<tolerance>0.284</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R06 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Africa</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>2.74</text>
-<tolerance>0.00548</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R07 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Middle East</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>32.5</text>
-<tolerance>0.065</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R08 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>World</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>9.74</text>
-<tolerance>0.01948</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R09 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Central and South America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.729</text>
-<tolerance>0.001458</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R10 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Central and South America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>23.6</text>
-<tolerance>0.0472</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R11 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Europe</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>21.2</text>
-<tolerance>0.0424</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R12 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Europe</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>21.2</text>
-<tolerance>0.0424</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R13 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Asia Pacific</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>3.94</text>
-<tolerance>0.00788</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R14 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>4.56</text>
-<tolerance>0.00912</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R15 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Central and South America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>14.6</text>
-<tolerance>0.0292</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R16 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>North America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.635</text>
-<tolerance>0.00127</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R17 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Africa</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>8.02</text>
-<tolerance>0.01604</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R18 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Other</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.682</text>
-<tolerance>0.001364</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R19 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>4.56</text>
-<tolerance>0.00912</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R20 Q1 : rexams_week-04_methane-csv </text>
 </name>
 <questiontext format="html">
 <text><![CDATA[
@@ -931,7 +57,7 @@
 
 <question type="numerical">
 <name>
-<text> R21 Q1 : rexams_week-04_methane-csv </text>
+<text> R02 Q1 : rexams_week-04_methane-csv </text>
 </name>
 <questiontext format="html">
 <text><![CDATA[
@@ -958,7 +84,7 @@
 }
 </style>
 <p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>North America</strong></em>.</p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Central and South America</strong></em>.</p>
 </p>]]></text>
 </questiontext>
 <generalfeedback format="html">
@@ -969,15 +95,15 @@
 <penalty>0</penalty>
 <defaultgrade>1</defaultgrade>
 <answer fraction="100" format="moodle_auto_format">
-<text>12.9</text>
-<tolerance>0.0258</tolerance>
+<text>0.729</text>
+<tolerance>0.001458</tolerance>
 </answer>
 </question>
 
 
 <question type="numerical">
 <name>
-<text> R22 Q1 : rexams_week-04_methane-csv </text>
+<text> R03 Q1 : rexams_week-04_methane-csv </text>
 </name>
 <questiontext format="html">
 <text><![CDATA[
@@ -1023,743 +149,7 @@
 
 <question type="numerical">
 <name>
-<text> R23 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Asia Pacific</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>27.3</text>
-<tolerance>0.0546</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R24 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Africa</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>2.74</text>
-<tolerance>0.00548</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R25 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Central and South America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>23.6</text>
-<tolerance>0.0472</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R26 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Asia Pacific</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>27.3</text>
-<tolerance>0.0546</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R27 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Asia Pacific</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>63.2</text>
-<tolerance>0.1264</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R28 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Asia Pacific</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>83.2</text>
-<tolerance>0.1664</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R29 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.347</text>
-<tolerance>0.000694</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R30 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Other</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.682</text>
-<tolerance>0.001364</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R31 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Europe</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>13.4</text>
-<tolerance>0.0268</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R32 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>North America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.635</text>
-<tolerance>0.00127</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R33 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Middle East</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>32.5</text>
-<tolerance>0.065</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R34 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Other</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>7.26</text>
-<tolerance>0.01452</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R35 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.347</text>
-<tolerance>0.000694</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R36 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Africa</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>26.5</text>
-<tolerance>0.053</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R37 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>North America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>41.8</text>
-<tolerance>0.0836</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R38 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Central and South America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>6.69</text>
-<tolerance>0.01338</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R39 Q1 : rexams_week-04_methane-csv </text>
+<text> R04 Q1 : rexams_week-04_methane-csv </text>
 </name>
 <questiontext format="html">
 <text><![CDATA[
@@ -1805,329 +195,7 @@
 
 <question type="numerical">
 <name>
-<text> R40 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Africa</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>16.9</text>
-<tolerance>0.0338</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R41 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>World</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>9.74</text>
-<tolerance>0.01948</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R42 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>North America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.635</text>
-<tolerance>0.00127</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R43 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>53.3</text>
-<tolerance>0.1066</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R44 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Europe</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>21.2</text>
-<tolerance>0.0424</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R45 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Other</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>7.26</text>
-<tolerance>0.01452</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R46 Q1 : rexams_week-04_methane-csv </text>
-</name>
-<questiontext format="html">
-<text><![CDATA[
-<style type="text/css" rel="stylesheet">
-/* tables with alternating shading */
-.table_shade {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.table_shade th {
-    border:1px solid #FFFFFF;
-    background: #D5D5D5;
-}
-.table_shade td {
-    border:1px solid #FFFFFF;
-}
-.table_shade .odd {
-    background: #EEEEEE;
-}
-.table_shade .even {
-    background: #FBFBFB;
-}
-</style>
-<p>
-<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Central and South America</strong></em>.</p>
-</p>]]></text>
-</questiontext>
-<generalfeedback format="html">
-<text><![CDATA[<p>
-<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
-</p>]]></text>
-</generalfeedback>
-<penalty>0</penalty>
-<defaultgrade>1</defaultgrade>
-<answer fraction="100" format="moodle_auto_format">
-<text>0.729</text>
-<tolerance>0.001458</tolerance>
-</answer>
-</question>
-
-
-<question type="numerical">
-<name>
-<text> R47 Q1 : rexams_week-04_methane-csv </text>
+<text> R05 Q1 : rexams_week-04_methane-csv </text>
 </name>
 <questiontext format="html">
 <text><![CDATA[
@@ -2173,7 +241,145 @@
 
 <question type="numerical">
 <name>
-<text> R48 Q1 : rexams_week-04_methane-csv </text>
+<text> R06 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>World</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>142</text>
+<tolerance>0.284</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R07 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>0.635</text>
+<tolerance>0.00127</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R08 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>4.19</text>
+<tolerance>0.00838</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R09 Q1 : rexams_week-04_methane-csv </text>
 </name>
 <questiontext format="html">
 <text><![CDATA[
@@ -2219,7 +425,7 @@
 
 <question type="numerical">
 <name>
-<text> R49 Q1 : rexams_week-04_methane-csv </text>
+<text> R10 Q1 : rexams_week-04_methane-csv </text>
 </name>
 <questiontext format="html">
 <text><![CDATA[
@@ -2265,7 +471,1617 @@
 
 <question type="numerical">
 <name>
-<text> R50 Q1 : rexams_week-04_methane-csv </text>
+<text> R11 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>4.56</text>
+<tolerance>0.00912</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R12 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>World</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>142</text>
+<tolerance>0.284</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R13 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>4.19</text>
+<tolerance>0.00838</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R14 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>41.8</text>
+<tolerance>0.0836</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R15 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Other</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>3.21</text>
+<tolerance>0.00642</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R16 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>53.3</text>
+<tolerance>0.1066</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R17 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Central and South America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>23.6</text>
+<tolerance>0.0472</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R18 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Asia Pacific</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>3.94</text>
+<tolerance>0.00788</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R19 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Europe</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>13.8</text>
+<tolerance>0.0276</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R20 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Middle East</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>32.5</text>
+<tolerance>0.065</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R21 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Other</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>3.21</text>
+<tolerance>0.00642</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R22 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Central and South America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>6.69</text>
+<tolerance>0.01338</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R23 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Asia Pacific</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>63.2</text>
+<tolerance>0.1264</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R24 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Other</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>3.21</text>
+<tolerance>0.00642</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R25 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>8.01</text>
+<tolerance>0.01602</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R26 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>World</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>267</text>
+<tolerance>0.534</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R27 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Central and South America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>0.729</text>
+<tolerance>0.001458</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R28 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>41.8</text>
+<tolerance>0.0836</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R29 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Africa</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>16.9</text>
+<tolerance>0.0338</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R30 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Other</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>7.26</text>
+<tolerance>0.01452</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R31 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>4.19</text>
+<tolerance>0.00838</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R32 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Middle East</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>3.91</text>
+<tolerance>0.00782</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R33 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>41.8</text>
+<tolerance>0.0836</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R34 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>41.8</text>
+<tolerance>0.0836</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R35 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Africa</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>2.74</text>
+<tolerance>0.00548</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R36 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Africa</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>16.9</text>
+<tolerance>0.0338</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R37 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Middle East</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>3.91</text>
+<tolerance>0.00782</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R38 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>World</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>142</text>
+<tolerance>0.284</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R39 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>12.9</text>
+<tolerance>0.0258</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R40 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Central and South America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>6.69</text>
+<tolerance>0.01338</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R41 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Europe</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>0.855</text>
+<tolerance>0.00171</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R42 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>41.8</text>
+<tolerance>0.0836</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R43 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Energy</strong></em> from <em><strong>Europe</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>13.8</text>
+<tolerance>0.0276</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R44 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>World</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>142</text>
+<tolerance>0.284</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R45 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>North America</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>0.635</text>
+<tolerance>0.00127</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R46 Q1 : rexams_week-04_methane-csv </text>
 </name>
 <questiontext format="html">
 <text><![CDATA[
@@ -2305,6 +2121,190 @@
 <answer fraction="100" format="moodle_auto_format">
 <text>0.347</text>
 <tolerance>0.000694</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R47 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Waste</strong></em> from <em><strong>Asia Pacific</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>27.3</text>
+<tolerance>0.0546</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R48 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>Russia &amp; Caspian</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>4.19</text>
+<tolerance>0.00838</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R49 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Agriculture</strong></em> from <em><strong>World</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>142</text>
+<tolerance>0.284</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R50 Q1 : rexams_week-04_methane-csv </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Read in the <em>csv</em> file located at <code>"https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv"</code>. This gives global methane emissions for (mostly) 2022. Calculate the total emissions due to <em><strong>Other</strong></em> from <em><strong>Middle East</strong></em>.</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>read_csv("https://github.com/eugene100hickey/ATU-data-handling/raw/refs/heads/master/data/Methane_final.csv")</code> followed by <code>group_by(type, region) |&gt; summarise(total = sum(emissions)) |&gt; ungroup()</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>0.0921</text>
+<tolerance>0.0001842</tolerance>
 </answer>
 </question>
 
