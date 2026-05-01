@@ -214,29 +214,29 @@ fa_list <- function(x, incremental = FALSE) {
 
 ::: {style="font-size: 80%; list-style-position: outside; padding-left: 0em;"}
 
-- two packages of note; `pdftools` and `tabulizer`
+- two packages of note; `pdftools` and `tabulapdf`
 
-- `tabulizer` has an `extract_tables()` function.
+- `tabulapdf` has an `extract_tables()` function.
 
     - good to specify the specific page or location in the pdf of the table you want
     
-    -  I (pretty much) always include a `output = "data.frame"` in the call to `extract_tables()`
+    -  I (pretty much) always include a `output = "tibble"` in the call to `extract_tables()`
     
 - always returns a list, each element of the list would be one of the tables in the document
 
     - use `object_returned_by_extract_tables[[1]]` to get the first table
     
-`here(system.file(package="tabulizer"), "examples", "data.pdf") |> `
-`extract_tables(output = "data.frame", pages = 1) |> `
+`here(system.file(package="tabulapdf"), "examples", "mtcars.pdf") |> `
+`extract_tables(output = "tibble", pages = 1) |> `
 `pluck(1)`
 
 :::
 
-## installing `tabulizer`
+## installing `tabulapdf`
 
 ::: {style="font-size: 80%; list-style-position: outside; padding-left: 0em;"}
 
-- Need **Java** installed, and R needs to know about it.
+- Need **Java** installed (I think), and R needs to know about it.
 
 - Might need to do this:
 
@@ -245,7 +245,7 @@ fa_list <- function(x, incremental = FALSE) {
     - set PATH `"C:\Program Files\Java\jre1.8.0_211\bin\server;%PATH%"` (make sure your path is correct).
     - Then in RStudio run `Sys.setenv(JAVA_HOME="")`
     
-- then `remotes::install_github(c("ropensci/tabulizerjars", "ropensci/tabulizer"), INSTALL_opts = "--no-multiarch")`
+- then `install.package("tabulapdf")`
 
 - can be a lot easier just to work in [posit.cloud](https://posit.cloud/){target="_blank"}
 
@@ -258,9 +258,9 @@ fa_list <- function(x, incremental = FALSE) {
 - [organ transplant an donation data from the NHS](https://nhsbtdbe.blob.core.windows.net/umbraco-assets-corp/29388/weekly-statistics.pdf){target="_blank"}
 
 ```{r}
-library(tabulizer)
+library(tabulapdf)
 organ_transplant <- "https://nhsbtdbe.blob.core.windows.net/umbraco-assets-corp/18494/centre-specific-activity-report.pdf"
-extract_tables(organ_transplant, output = "data.frame", pages = 2) |> pluck(1) |> gt::gt()
+extract_tables(organ_transplant, output = "tibble", pages = 2) |> pluck(1) |> gt::gt()
 ```
 
 
@@ -397,7 +397,7 @@ extract_tables(organ_transplant, output = "data.frame", pages = 2) |> pluck(1) |
 
 (@) Make a new *googlesheet* in the **Chrome** browser. After you've entered some data, click **Share** (top right corner). Click **General Access** and choose *Anyone with the link*. **Copy the link**. Go to RStudio now and use the link you've  copied to import this googlesheet into R.
 
-(@)  Have a look at the Department of Education SCHOOL SELF-EVALUATION GUIDELINES 2016-2020 [here](https://assets.gov.ie/static/documents/school-self-evaluation-guidelines-2016-2020-primary.pdf){target="_blank"}. Use `tabulizer` to read in the table on page 27 of this report as a data.frame (note, it'll be the sixth table `tabulizer` encounters).
+(@)  Have a look at the Department of Education SCHOOL SELF-EVALUATION GUIDELINES 2016-2020 [here](https://assets.gov.ie/static/documents/school-self-evaluation-guidelines-2016-2020-primary.pdf){target="_blank"}. Use `tabulapdf` to read in the table on page 27 of this report as a data.frame (note, it'll be the sixth table `tabulapdf` encounters).
 
 :::
 

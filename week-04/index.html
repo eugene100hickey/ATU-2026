@@ -6,9 +6,8 @@
 <script src="04-getting-and-cleaning-data_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="04-getting-and-cleaning-data_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="04-getting-and-cleaning-data_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="04-getting-and-cleaning-data_files/libs/quarto-html/quarto-html-5363c96604a0db55e0fafc787385e36b.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="04-getting-and-cleaning-data_files/libs/quarto-html/quarto-syntax-highlighting-a696728df169e363e4859ca3ec1ae01c.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.42">
+<link href="04-getting-and-cleaning-data_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Eugene Hickey">
   <meta name="dcterms.date" content="2025-05-01">
@@ -19,6 +18,9 @@
   <link rel="stylesheet" href="04-getting-and-cleaning-data_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="04-getting-and-cleaning-data_files/libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -31,8 +33,9 @@
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -43,7 +46,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -96,7 +99,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="04-getting-and-cleaning-data_files/libs/revealjs/dist/theme/quarto-d58ca6e55452da357bd4996cb6e3aa10.css">
+  <link rel="stylesheet" href="04-getting-and-cleaning-data_files/libs/revealjs/dist/theme/quarto-1a8385bbf955fbb4448938bc10efacf4.css">
   <link rel="stylesheet" href="assets/custom.css">
   <link rel="stylesheet" href="assets/tachyons-addon.css">
   <link href="04-getting-and-cleaning-data_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -337,29 +340,29 @@ worksheet later on)</p></li>
 <section class="slide level2">
 
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">PDF</a></li><li><a href="#tabset-1-2">installing <code>tabulizer</code></a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">PDF</a></li><li><a href="#tabset-1-2">installing <code>tabulapdf</code></a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <div style="font-size: 80%; list-style-position: outside; padding-left: 0em;">
 <ul>
-<li><p>two packages of note; <code>pdftools</code> and <code>tabulizer</code></p></li>
-<li><p><code>tabulizer</code> has an <code>extract_tables()</code> function.</p>
+<li><p>two packages of note; <code>pdftools</code> and <code>tabulapdf</code></p></li>
+<li><p><code>tabulapdf</code> has an <code>extract_tables()</code> function.</p>
 <ul>
 <li><p>good to specify the specific page or location in the pdf of the table you want</p></li>
-<li><p>I (pretty much) always include a <code>output = "data.frame"</code> in the call to <code>extract_tables()</code></p></li>
+<li><p>I (pretty much) always include a <code>output = "tibble"</code> in the call to <code>extract_tables()</code></p></li>
 </ul></li>
 <li><p>always returns a list, each element of the list would be one of the tables in the document</p>
 <ul>
 <li>use <code>object_returned_by_extract_tables[[1]]</code> to get the first table</li>
 </ul></li>
 </ul>
-<p><code>here(system.file(package="tabulizer"), "examples", "data.pdf") |&gt;</code> <code>extract_tables(output = "data.frame", pages = 1) |&gt;</code> <code>pluck(1)</code></p>
+<p><code>here(system.file(package="tabulapdf"), "examples", "mtcars.pdf") |&gt;</code> <code>extract_tables(output = "tibble", pages = 1) |&gt;</code> <code>pluck(1)</code></p>
 </div>
 </div>
 <div id="tabset-1-2">
 <div style="font-size: 80%; list-style-position: outside; padding-left: 0em;">
 <ul>
-<li><p>Need <strong>Java</strong> installed, and R needs to know about it.</p></li>
+<li><p>Need <strong>Java</strong> installed (I think), and R needs to know about it.</p></li>
 <li><p>Might need to do this:</p>
 <ul>
 <li>Install 64 bit Java from <a href="https://java.com/en/download/manual.jsp" target="_blank">java.com</a>.</li>
@@ -367,7 +370,7 @@ worksheet later on)</p></li>
 <li>set PATH <code>"C:\Program Files\Java\jre1.8.0_211\bin\server;%PATH%"</code> (make sure your path is correct).</li>
 <li>Then in RStudio run <code>Sys.setenv(JAVA_HOME="")</code></li>
 </ul></li>
-<li><p>then <code>remotes::install_github(c("ropensci/tabulizerjars", "ropensci/tabulizer"), INSTALL_opts = "--no-multiarch")</code></p></li>
+<li><p>then <code>install.package("tabulapdf")</code></p></li>
 <li><p>can be a lot easier just to work in <a href="https://posit.cloud/" target="_blank">posit.cloud</a></p></li>
 </ul>
 </div>
@@ -381,27 +384,27 @@ worksheet later on)</p></li>
 <li><a href="https://nhsbtdbe.blob.core.windows.net/umbraco-assets-corp/29388/weekly-statistics.pdf" target="_blank">organ transplant an donation data from the NHS</a></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">library</span>(tabulizer)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">library</span>(tabulapdf)</span>
 <span id="cb1-2"><a href=""></a>organ_transplant <span class="ot">&lt;-</span> <span class="st">"https://nhsbtdbe.blob.core.windows.net/umbraco-assets-corp/18494/centre-specific-activity-report.pdf"</span></span>
-<span id="cb1-3"><a href=""></a><span class="fu">extract_tables</span>(organ_transplant, <span class="at">output =</span> <span class="st">"data.frame"</span>, <span class="at">pages =</span> <span class="dv">2</span>) <span class="sc">|&gt;</span> <span class="fu">pluck</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span> gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href=""></a><span class="fu">extract_tables</span>(organ_transplant, <span class="at">output =</span> <span class="st">"tibble"</span>, <span class="at">pages =</span> <span class="dv">2</span>) <span class="sc">|&gt;</span> <span class="fu">pluck</span>(<span class="dv">1</span>) <span class="sc">|&gt;</span> gt<span class="sc">::</span><span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="zjmvizyhqw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zjmvizyhqw table {
+<div id="apoimwodxx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#apoimwodxx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zjmvizyhqw thead, #zjmvizyhqw tbody, #zjmvizyhqw tfoot, #zjmvizyhqw tr, #zjmvizyhqw td, #zjmvizyhqw th {
+#apoimwodxx thead, #apoimwodxx tbody, #apoimwodxx tfoot, #apoimwodxx tr, #apoimwodxx td, #apoimwodxx th {
   border-style: none;
 }
 
-#zjmvizyhqw p {
+#apoimwodxx p {
   margin: 0;
   padding: 0;
 }
 
-#zjmvizyhqw .gt_table {
+#apoimwodxx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -427,12 +430,12 @@ worksheet later on)</p></li>
   border-left-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_caption {
+#apoimwodxx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zjmvizyhqw .gt_title {
+#apoimwodxx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -444,7 +447,7 @@ worksheet later on)</p></li>
   border-bottom-width: 0;
 }
 
-#zjmvizyhqw .gt_subtitle {
+#apoimwodxx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -456,7 +459,7 @@ worksheet later on)</p></li>
   border-top-width: 0;
 }
 
-#zjmvizyhqw .gt_heading {
+#apoimwodxx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -468,13 +471,13 @@ worksheet later on)</p></li>
   border-right-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_bottom_border {
+#apoimwodxx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_col_headings {
+#apoimwodxx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -489,7 +492,7 @@ worksheet later on)</p></li>
   border-right-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_col_heading {
+#apoimwodxx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -509,7 +512,7 @@ worksheet later on)</p></li>
   overflow-x: hidden;
 }
 
-#zjmvizyhqw .gt_column_spanner_outer {
+#apoimwodxx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -521,15 +524,15 @@ worksheet later on)</p></li>
   padding-right: 4px;
 }
 
-#zjmvizyhqw .gt_column_spanner_outer:first-child {
+#apoimwodxx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zjmvizyhqw .gt_column_spanner_outer:last-child {
+#apoimwodxx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zjmvizyhqw .gt_column_spanner {
+#apoimwodxx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -541,11 +544,11 @@ worksheet later on)</p></li>
   width: 100%;
 }
 
-#zjmvizyhqw .gt_spanner_row {
+#apoimwodxx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zjmvizyhqw .gt_group_heading {
+#apoimwodxx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -571,7 +574,7 @@ worksheet later on)</p></li>
   text-align: left;
 }
 
-#zjmvizyhqw .gt_empty_group_heading {
+#apoimwodxx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -586,15 +589,15 @@ worksheet later on)</p></li>
   vertical-align: middle;
 }
 
-#zjmvizyhqw .gt_from_md > :first-child {
+#apoimwodxx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zjmvizyhqw .gt_from_md > :last-child {
+#apoimwodxx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zjmvizyhqw .gt_row {
+#apoimwodxx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -613,7 +616,7 @@ worksheet later on)</p></li>
   overflow-x: hidden;
 }
 
-#zjmvizyhqw .gt_stub {
+#apoimwodxx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -626,7 +629,7 @@ worksheet later on)</p></li>
   padding-right: 5px;
 }
 
-#zjmvizyhqw .gt_stub_row_group {
+#apoimwodxx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -640,15 +643,15 @@ worksheet later on)</p></li>
   vertical-align: top;
 }
 
-#zjmvizyhqw .gt_row_group_first td {
+#apoimwodxx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zjmvizyhqw .gt_row_group_first th {
+#apoimwodxx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zjmvizyhqw .gt_summary_row {
+#apoimwodxx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -658,16 +661,16 @@ worksheet later on)</p></li>
   padding-right: 5px;
 }
 
-#zjmvizyhqw .gt_first_summary_row {
+#apoimwodxx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_first_summary_row.thick {
+#apoimwodxx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zjmvizyhqw .gt_last_summary_row {
+#apoimwodxx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -677,7 +680,7 @@ worksheet later on)</p></li>
   border-bottom-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_grand_summary_row {
+#apoimwodxx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -687,7 +690,7 @@ worksheet later on)</p></li>
   padding-right: 5px;
 }
 
-#zjmvizyhqw .gt_first_grand_summary_row {
+#apoimwodxx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -697,7 +700,7 @@ worksheet later on)</p></li>
   border-top-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_last_grand_summary_row_top {
+#apoimwodxx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -707,11 +710,11 @@ worksheet later on)</p></li>
   border-bottom-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_striped {
+#apoimwodxx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zjmvizyhqw .gt_table_body {
+#apoimwodxx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -720,7 +723,7 @@ worksheet later on)</p></li>
   border-bottom-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_footnotes {
+#apoimwodxx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -734,7 +737,7 @@ worksheet later on)</p></li>
   border-right-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_footnote {
+#apoimwodxx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -743,7 +746,7 @@ worksheet later on)</p></li>
   padding-right: 5px;
 }
 
-#zjmvizyhqw .gt_sourcenotes {
+#apoimwodxx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -757,7 +760,7 @@ worksheet later on)</p></li>
   border-right-color: #D3D3D3;
 }
 
-#zjmvizyhqw .gt_sourcenote {
+#apoimwodxx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -765,214 +768,196 @@ worksheet later on)</p></li>
   padding-right: 5px;
 }
 
-#zjmvizyhqw .gt_left {
+#apoimwodxx .gt_left {
   text-align: left;
 }
 
-#zjmvizyhqw .gt_center {
+#apoimwodxx .gt_center {
   text-align: center;
 }
 
-#zjmvizyhqw .gt_right {
+#apoimwodxx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zjmvizyhqw .gt_font_normal {
+#apoimwodxx .gt_font_normal {
   font-weight: normal;
 }
 
-#zjmvizyhqw .gt_font_bold {
+#apoimwodxx .gt_font_bold {
   font-weight: bold;
 }
 
-#zjmvizyhqw .gt_font_italic {
+#apoimwodxx .gt_font_italic {
   font-style: italic;
 }
 
-#zjmvizyhqw .gt_super {
+#apoimwodxx .gt_super {
   font-size: 65%;
 }
 
-#zjmvizyhqw .gt_footnote_marks {
+#apoimwodxx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zjmvizyhqw .gt_asterisk {
+#apoimwodxx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zjmvizyhqw .gt_indent_1 {
+#apoimwodxx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zjmvizyhqw .gt_indent_2 {
+#apoimwodxx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zjmvizyhqw .gt_indent_3 {
+#apoimwodxx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zjmvizyhqw .gt_indent_4 {
+#apoimwodxx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zjmvizyhqw .gt_indent_5 {
+#apoimwodxx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zjmvizyhqw .katex-display {
+#apoimwodxx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zjmvizyhqw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#apoimwodxx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
 
-<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top" data-quarto-bootstrap="false">
 <thead>
 <tr class="gt_col_headings header">
 <th id="Adult" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Adult</th>
-<th id="X" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">X</th>
-<th id="X.1" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">X.1</th>
-<th id="X.2" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">X.2</th>
-<th id="X.3" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">X.3</th>
-<th id="X.4" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">X.4</th>
-<th id="X.5" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">X.5</th>
+<th id="a...2" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">...2</th>
+<th id="a...3" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">...3</th>
+<th id="a...4" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">...4</th>
+<th id="a...5" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">...5</th>
+<th id="a...6" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">...6</th>
+<th id="a...7" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">...7</th>
 </tr>
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
 <td class="gt_row gt_left" headers="Adult">Birmingham</td>
-<td class="gt_row gt_right" headers="X">27</td>
-<td class="gt_row gt_right" headers="X.1">23</td>
-<td class="gt_row gt_right" headers="X.2">17.4</td>
-<td class="gt_row gt_right" headers="X.3">17</td>
-<td class="gt_row gt_right" headers="X.4">16</td>
-<td class="gt_row gt_right" headers="X.5">+6.3</td>
+<td class="gt_row gt_right" headers="...2">27</td>
+<td class="gt_row gt_right" headers="...3">23</td>
+<td class="gt_row gt_right" headers="...4">17.4</td>
+<td class="gt_row gt_right" headers="...5">17</td>
+<td class="gt_row gt_right" headers="...6">16</td>
+<td class="gt_row gt_right" headers="...7">+6.3</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="Adult">Glasgow</td>
-<td class="gt_row gt_right" headers="X">11</td>
-<td class="gt_row gt_right" headers="X.1">7</td>
-<td class="gt_row gt_right" headers="X.2">57.1</td>
-<td class="gt_row gt_right" headers="X.3">-</td>
-<td class="gt_row gt_right" headers="X.4">-</td>
-<td class="gt_row gt_right" headers="X.5">-</td>
+<td class="gt_row gt_right" headers="...2">11</td>
+<td class="gt_row gt_right" headers="...3">7</td>
+<td class="gt_row gt_right" headers="...4">57.1</td>
+<td class="gt_row gt_right" headers="...5">-</td>
+<td class="gt_row gt_right" headers="...6">-</td>
+<td class="gt_row gt_right" headers="...7">-</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="Adult">Harefield</td>
-<td class="gt_row gt_right" headers="X">21</td>
-<td class="gt_row gt_right" headers="X.1">33</td>
-<td class="gt_row gt_right" headers="X.2">-36.4</td>
-<td class="gt_row gt_right" headers="X.3">37</td>
-<td class="gt_row gt_right" headers="X.4">48</td>
-<td class="gt_row gt_right" headers="X.5">-22.9</td>
+<td class="gt_row gt_right" headers="...2">21</td>
+<td class="gt_row gt_right" headers="...3">33</td>
+<td class="gt_row gt_right" headers="...4">-36.4</td>
+<td class="gt_row gt_right" headers="...5">37</td>
+<td class="gt_row gt_right" headers="...6">48</td>
+<td class="gt_row gt_right" headers="...7">-22.9</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="Adult">Manchester</td>
-<td class="gt_row gt_right" headers="X">22</td>
-<td class="gt_row gt_right" headers="X.1">20</td>
-<td class="gt_row gt_right" headers="X.2">10.0</td>
-<td class="gt_row gt_right" headers="X.3">28</td>
-<td class="gt_row gt_right" headers="X.4">19</td>
-<td class="gt_row gt_right" headers="X.5">+47.4</td>
+<td class="gt_row gt_right" headers="...2">22</td>
+<td class="gt_row gt_right" headers="...3">20</td>
+<td class="gt_row gt_right" headers="...4">10.0</td>
+<td class="gt_row gt_right" headers="...5">28</td>
+<td class="gt_row gt_right" headers="...6">19</td>
+<td class="gt_row gt_right" headers="...7">+47.4</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="Adult">Newcastle</td>
-<td class="gt_row gt_right" headers="X">22</td>
-<td class="gt_row gt_right" headers="X.1">19</td>
-<td class="gt_row gt_right" headers="X.2">15.8</td>
-<td class="gt_row gt_right" headers="X.3">30</td>
-<td class="gt_row gt_right" headers="X.4">25</td>
-<td class="gt_row gt_right" headers="X.5">+20.0</td>
+<td class="gt_row gt_right" headers="...2">22</td>
+<td class="gt_row gt_right" headers="...3">19</td>
+<td class="gt_row gt_right" headers="...4">15.8</td>
+<td class="gt_row gt_right" headers="...5">30</td>
+<td class="gt_row gt_right" headers="...6">25</td>
+<td class="gt_row gt_right" headers="...7">+20.0</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="Adult">Papworth</td>
-<td class="gt_row gt_right" headers="X">36</td>
-<td class="gt_row gt_right" headers="X.1">39</td>
-<td class="gt_row gt_right" headers="X.2">-7.7</td>
-<td class="gt_row gt_right" headers="X.3">38</td>
-<td class="gt_row gt_right" headers="X.4">39</td>
-<td class="gt_row gt_right" headers="X.5">-2.6</td>
+<td class="gt_row gt_right" headers="...2">36</td>
+<td class="gt_row gt_right" headers="...3">39</td>
+<td class="gt_row gt_right" headers="...4">-7.7</td>
+<td class="gt_row gt_right" headers="...5">38</td>
+<td class="gt_row gt_right" headers="...6">39</td>
+<td class="gt_row gt_right" headers="...7">-2.6</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="Adult">Total</td>
-<td class="gt_row gt_right" headers="X">139</td>
-<td class="gt_row gt_right" headers="X.1">141</td>
-<td class="gt_row gt_right" headers="X.2">-1.4</td>
-<td class="gt_row gt_right" headers="X.3">150</td>
-<td class="gt_row gt_right" headers="X.4">147</td>
-<td class="gt_row gt_right" headers="X.5">+2.0</td>
+<td class="gt_row gt_right" headers="...2">139</td>
+<td class="gt_row gt_right" headers="...3">141</td>
+<td class="gt_row gt_right" headers="...4">-1.4</td>
+<td class="gt_row gt_right" headers="...5">150</td>
+<td class="gt_row gt_right" headers="...6">147</td>
+<td class="gt_row gt_right" headers="...7">+2.0</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Adult"></td>
-<td class="gt_row gt_right" headers="X">NA</td>
-<td class="gt_row gt_right" headers="X.1">NA</td>
-<td class="gt_row gt_right" headers="X.2">NA</td>
-<td class="gt_row gt_right" headers="X.3"></td>
-<td class="gt_row gt_right" headers="X.4"></td>
-<td class="gt_row gt_right" headers="X.5"></td>
-</tr>
-<tr class="odd">
 <td class="gt_row gt_left" headers="Adult">Paediatric</td>
-<td class="gt_row gt_right" headers="X">NA</td>
-<td class="gt_row gt_right" headers="X.1">NA</td>
-<td class="gt_row gt_right" headers="X.2">NA</td>
-<td class="gt_row gt_right" headers="X.3"></td>
-<td class="gt_row gt_right" headers="X.4"></td>
-<td class="gt_row gt_right" headers="X.5"></td>
+<td class="gt_row gt_right" headers="...2">NA</td>
+<td class="gt_row gt_right" headers="...3">NA</td>
+<td class="gt_row gt_right" headers="...4">NA</td>
+<td class="gt_row gt_right" headers="...5">NA</td>
+<td class="gt_row gt_right" headers="...6">NA</td>
+<td class="gt_row gt_right" headers="...7">NA</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_left" headers="Adult">GOSH</td>
-<td class="gt_row gt_right" headers="X">6</td>
-<td class="gt_row gt_right" headers="X.1">13</td>
-<td class="gt_row gt_right" headers="X.2">-53.8</td>
-<td class="gt_row gt_right" headers="X.3">2</td>
-<td class="gt_row gt_right" headers="X.4">3</td>
-<td class="gt_row gt_right" headers="X.5">-33.3</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Adult">Newcastle</td>
-<td class="gt_row gt_right" headers="X">11</td>
-<td class="gt_row gt_right" headers="X.1">9</td>
-<td class="gt_row gt_right" headers="X.2">22.2</td>
-<td class="gt_row gt_right" headers="X.3">2</td>
-<td class="gt_row gt_right" headers="X.4">1</td>
-<td class="gt_row gt_right" headers="X.5">+100.0</td>
+<td class="gt_row gt_right" headers="...2">6</td>
+<td class="gt_row gt_right" headers="...3">13</td>
+<td class="gt_row gt_right" headers="...4">-53.8</td>
+<td class="gt_row gt_right" headers="...5">2</td>
+<td class="gt_row gt_right" headers="...6">3</td>
+<td class="gt_row gt_right" headers="...7">-33.3</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="Adult">Total</td>
-<td class="gt_row gt_right" headers="X">17</td>
-<td class="gt_row gt_right" headers="X.1">22</td>
-<td class="gt_row gt_right" headers="X.2">-22.7</td>
-<td class="gt_row gt_right" headers="X.3">4</td>
-<td class="gt_row gt_right" headers="X.4">4</td>
-<td class="gt_row gt_right" headers="X.5">+0.0</td>
+<td class="gt_row gt_left" headers="Adult">Newcastle</td>
+<td class="gt_row gt_right" headers="...2">11</td>
+<td class="gt_row gt_right" headers="...3">9</td>
+<td class="gt_row gt_right" headers="...4">22.2</td>
+<td class="gt_row gt_right" headers="...5">2</td>
+<td class="gt_row gt_right" headers="...6">1</td>
+<td class="gt_row gt_right" headers="...7">+100.0</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="Adult"></td>
-<td class="gt_row gt_right" headers="X">NA</td>
-<td class="gt_row gt_right" headers="X.1">NA</td>
-<td class="gt_row gt_right" headers="X.2">NA</td>
-<td class="gt_row gt_right" headers="X.3"></td>
-<td class="gt_row gt_right" headers="X.4"></td>
-<td class="gt_row gt_right" headers="X.5"></td>
+<td class="gt_row gt_left" headers="Adult">Total</td>
+<td class="gt_row gt_right" headers="...2">17</td>
+<td class="gt_row gt_right" headers="...3">22</td>
+<td class="gt_row gt_right" headers="...4">-22.7</td>
+<td class="gt_row gt_right" headers="...5">4</td>
+<td class="gt_row gt_right" headers="...6">4</td>
+<td class="gt_row gt_right" headers="...7">+0.0</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="Adult">TOTAL</td>
-<td class="gt_row gt_right" headers="X">156</td>
-<td class="gt_row gt_right" headers="X.1">163</td>
-<td class="gt_row gt_right" headers="X.2">-4.3</td>
-<td class="gt_row gt_right" headers="X.3">154</td>
-<td class="gt_row gt_right" headers="X.4">151</td>
-<td class="gt_row gt_right" headers="X.5">+2.0</td>
+<td class="gt_row gt_right" headers="...2">156</td>
+<td class="gt_row gt_right" headers="...3">163</td>
+<td class="gt_row gt_right" headers="...4">-4.3</td>
+<td class="gt_row gt_right" headers="...5">154</td>
+<td class="gt_row gt_right" headers="...6">151</td>
+<td class="gt_row gt_right" headers="...7">+2.0</td>
 </tr>
 </tbody>
 </table>
@@ -1108,7 +1093,7 @@ worksheet later on)</p></li>
 <li><p>Use <code>rio::import()</code> to read in the <em>Ferris Wheel</em> dataset available from <a href="https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-08-09/wheels.csv" target="_blank">https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-08-09/wheels.csv</a>. Where is the highest ferris wheel? <strong>[Golden Gate Flyer]</strong></p></li>
 <li><p>Look at the example excel file called <code>deaths.xlsx</code> from the <code>readxl</code> package (find it using <code>system.file(package = "readxl")</code> then look in the <code>extdata</code> directory). Read the <code>"other"</code> sheet from this file using the <code>import()</code> function. Note that the first four rows are full of junk so they should be skipped. See if you can figure out what the <em>Date of Birth</em> column represents. <strong>[days since 1900]</strong></p></li>
 <li><p>Make a new <em>googlesheet</em> in the <strong>Chrome</strong> browser. After you’ve entered some data, click <strong>Share</strong> (top right corner). Click <strong>General Access</strong> and choose <em>Anyone with the link</em>. <strong>Copy the link</strong>. Go to RStudio now and use the link you’ve copied to import this googlesheet into R.</p></li>
-<li><p>Have a look at the Department of Education SCHOOL SELF-EVALUATION GUIDELINES 2016-2020 <a href="https://assets.gov.ie/static/documents/school-self-evaluation-guidelines-2016-2020-primary.pdf" target="_blank">here</a>. Use <code>tabulizer</code> to read in the table on page 27 of this report as a data.frame (note, it’ll be the sixth table <code>tabulizer</code> encounters).</p></li>
+<li><p>Have a look at the Department of Education SCHOOL SELF-EVALUATION GUIDELINES 2016-2020 <a href="https://assets.gov.ie/static/documents/school-self-evaluation-guidelines-2016-2020-primary.pdf" target="_blank">here</a>. Use <code>tabulapdf</code> to read in the table on page 27 of this report as a data.frame (note, it’ll be the sixth table <code>tabulapdf</code> encounters).</p></li>
 </ol>
 </div>
 </section>
@@ -1332,7 +1317,7 @@ worksheet later on)</p></li>
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1435,190 +1420,173 @@ worksheet later on)</p></li>
     
 
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
           }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
           }
-        } else {
-          return undefined;
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     <link rel="stylesheet" href="assets/syntax-highlight.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.1.1-web/css/all.min.css">
     <script src="assets/fontawesome-free-6.1.1-web/js/all.min.js"></script>
