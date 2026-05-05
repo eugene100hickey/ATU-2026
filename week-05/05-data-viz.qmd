@@ -98,6 +98,7 @@ theme_set(theme_clean())
 
 ```
 
+
 ::: title-box
 <h2>`r rmarkdown::metadata$pagetitle`</h2>
 
@@ -122,7 +123,7 @@ library(ggalt)
 library(patchwork)
 library(ggridges)
 library(lubridate)
-library(boxoffice)
+library(rvest)
 library(marquee)
 ```
 
@@ -131,6 +132,40 @@ library(marquee)
 #| echo: false
 sysfonts::font_add("Ink Free", regular = "fonts/Inkfree.ttf")
 showtext::showtext_auto()
+```
+
+
+```{r}
+#| label: my_boxoffice
+#| cache: true
+#| echo: false
+#| 
+
+
+my_boxoffice <- function(my_date = Sys.Date()-7) {
+  
+  dates <- my_date |> 
+    str_replace_all("-", "/")
+  
+  my_xml <- "tbody .data , .chart-desktop a"
+  my_url <- glue::glue("https://www.the-numbers.com/box-office-chart/daily/{dates}")
+  #my_url <- "https://www.the-numbers.com/box-office-chart/daily/2026/04/14"
+  z <- read_html(httr::GET(my_url, httr::timeout(30)))
+  z1 <- html_elements(z, my_xml)
+  z2 <- html_text2(z1)
+  movie <- z2[seq(3, 93, 10)]
+  weekly <- z2[seq(4, 94, 10)] |> 
+    str_remove_all("\\$") |> 
+    str_remove_all(",") |> 
+    as.numeric()
+  gross <- z2[seq(9, 99, 10)] |> 
+    str_remove_all("\\$") |> 
+    str_remove_all(",") |> 
+    as.numeric()
+  tibble(movie, weekly, gross)
+}
+
+
 ```
 
 
@@ -384,7 +419,7 @@ roller +
 
 ### and what you want to investigate
 
-Lots of these come from [Top 50 Visualizations in R](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#5.%20Composition)
+Lots of these come from [Top 50 Visualizations in R](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html#5.%20Composition){target="_blank"}
 
 - Show the data
 
@@ -451,7 +486,7 @@ diamonds %>%
 
 ```{r data, cache = F, echo=T, message=FALSE, warning=FALSE}
 boxoffice_date <- Sys.Date()-7
-movies <- boxoffice(boxoffice_date) |>  
+movies <- my_boxoffice(boxoffice_date) |>  
   mutate(gross = gross / 1e6,
          movie_name = movie,
          movie = abbreviate(movie))
@@ -506,7 +541,7 @@ movies |>
 penguins %>% 
   group_by(species) %>% 
   summarise(body_mass = mean(body_mass_g, na.rm = T)) %>%
-  ggplot(aes(species, body_mass_g, xend = species, yend = body_mass_g)) + 
+  ggplot(aes(species, body_mass, xend = species, yend = body_mass)) + 
   theme_clean() +
   coord_flip() +
   labs(caption = "@PalmerPenguins",
@@ -1147,6 +1182,6 @@ death_prob %>%
 
 - Your improvement  **(2 marks)**
 
-Upload your work (the image and your code) to moodle at [Week Five Assignment - death_prob](https://vlesligo.atu.ie/mod/assign/view.php?id=1092783){target="_blank"}. The deadline is midnight on Saturday 17th May 2025.
+Upload your work (the image and your code) to moodle at [Week Five Assignment - death_prob](https://vlesligo.atu.ie/mod/assign/view.php?id=975400){target="_blank"}. The deadline is midnight on Sunday 24th May 2026.
 
 
