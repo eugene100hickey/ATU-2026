@@ -1,7 +1,7 @@
 ```{r data generation, echo = FALSE, results = "hide", message=F, warning=F}
 library(exams)
 library(tidyverse)
-library(tabulizer)
+library(tabulapdf)
 
 file_base <- "https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/"
 directory_base <- "C:/Users/ehickey/OneDrive - Technological University Dublin/Desktop/Academic/SciencePG/ATU-2025/week-02/data/"
@@ -21,26 +21,26 @@ repeat{
   file_name_github <- glue::glue("{file_base}{my_college$code}-{my_year}.pdf")
   file_name <- glue::glue("{directory_base}{my_college$code}-{my_year}.pdf")
   
-  my_data <- extract_tables(file_name, output = "data.frame")[[1]]
+  my_data <- extract_tables(file_name, output = "tibble")
   
   break 
   {
-    nrow(my_data) > 10
+    length(my_data) > 0
   }
 }
 
-solution <- mean(my_data$final, na.rm = T) |> round(0)
+solution <- mean(my_data[[1]]$final, na.rm = T) |> round(0)
 
 ```
 
 
 Question
 ========
-Download the pdf file from **`r file_name_github`** which gives the CAO points for some courses from `r my_college$name` for the year `r my_year`. Use `tabulizer::extract_tables()` to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use `na.rm = TRUE` in the call to `mean()`). You can round off your answer to the nearest point
+Download the pdf file from **`r file_name_github`** which gives the CAO points for some courses from `r my_college$name` for the year `r my_year`. Use `tabulapdf::extract_tables()` to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use `na.rm = TRUE` in the call to `mean()`). You can round off your answer to the nearest point
 
 Solution
 ========
-Use `extract_tables("`r glue::glue("{file_name_github}")`", output = "data.frame")[[1]]`, followed by ` mean(my_data$final, na.rm = T)`.
+Use `extract_tables("`r glue::glue("{file_name_github}")`", output = "tibble")[[1]]`, followed by ` mean(my_data$final, na.rm = T)`.
 
 
 Meta-information

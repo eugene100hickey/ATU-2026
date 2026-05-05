@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+
+<question type="category">
+<category>
+<text>$course$/tabulapdf/Exercise 1</text>
+</category>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R01 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/TR-2017.pdf</strong> which gives the CAO points for some courses from TCD for the year 2017. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/TR-2017.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>497</text>
+<tolerance>9.94</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R02 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/CK-2020.pdf</strong> which gives the CAO points for some courses from UCC for the year 2020. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/CK-2020.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>450</text>
+<tolerance>9</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R03 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/CK-2008.pdf</strong> which gives the CAO points for some courses from UCC for the year 2008. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/CK-2008.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>410</text>
+<tolerance>8.2</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R04 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/TR-2008.pdf</strong> which gives the CAO points for some courses from TCD for the year 2008. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/TR-2008.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>462</text>
+<tolerance>9.24</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R05 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/TR-2016.pdf</strong> which gives the CAO points for some courses from TCD for the year 2016. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/TR-2016.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>498</text>
+<tolerance>9.96</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R06 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/TR-2009.pdf</strong> which gives the CAO points for some courses from TCD for the year 2009. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/TR-2009.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>475</text>
+<tolerance>9.5</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R07 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/DN-2010.pdf</strong> which gives the CAO points for some courses from UCD for the year 2010. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/DN-2010.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>434</text>
+<tolerance>8.68</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R08 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/DN-2020.pdf</strong> which gives the CAO points for some courses from UCD for the year 2020. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/DN-2020.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>464</text>
+<tolerance>9.28</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R09 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/DN-2014.pdf</strong> which gives the CAO points for some courses from UCD for the year 2014. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/DN-2014.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>420</text>
+<tolerance>8.4</tolerance>
+</answer>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> R10 Q1 : rexams_week-04_pdf </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[
+<style type="text/css" rel="stylesheet">
+/* tables with alternating shading */
+.table_shade {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.table_shade th {
+    border:1px solid #FFFFFF;
+    background: #D5D5D5;
+}
+.table_shade td {
+    border:1px solid #FFFFFF;
+}
+.table_shade .odd {
+    background: #EEEEEE;
+}
+.table_shade .even {
+    background: #FBFBFB;
+}
+</style>
+<p>
+<p>Download the pdf file from <strong>https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/GY-2009.pdf</strong> which gives the CAO points for some courses from NUIG for the year 2009. Use <code>tabulapdf::extract_tables()</code> to read in the data from this file. Calculate the mean value of the final points for these courses, ignoring missing values (use <code>na.rm = TRUE</code> in the call to <code>mean()</code>). You can round off your answer to the nearest point</p>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<p>Use <code>extract_tables("https://raw.githubusercontent.com/eugene100hickey/cao-pdf/master/data/GY-2009.pdf", output = "tibble")[[1]]</code>, followed by <code>mean(my_data$final, na.rm = T)</code>.</p>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>378</text>
+<tolerance>7.56</tolerance>
+</answer>
+</question>
+
+</quiz>

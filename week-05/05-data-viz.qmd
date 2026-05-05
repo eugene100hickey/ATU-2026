@@ -113,6 +113,7 @@ theme_set(theme_clean())
 #| echo: false
 
 library(tidyverse)
+library(palmerpenguins)
 library(scales)
 library(gapminder)
 library(flipbookr)
@@ -194,9 +195,9 @@ showtext::showtext_auto()
 
 penguins %>% drop_na() %>% 
   ggplot() +
-  aes(x = flipper_len) +
+  aes(x = flipper_length_mm) +
   scale_x_continuous(breaks = seq(170, 230, by = 20)) +
-  aes(y = bill_len) + 
+  aes(y = bill_length_mm) + 
   geom_point(size = 3, show.legend = F) +
   aes(colour = species) +
   scale_color_manual(values = c("black", "blue", "grey70")) +
@@ -504,8 +505,8 @@ movies |>
 
 penguins %>% 
   group_by(species) %>% 
-  summarise(body_mass = mean(body_mass, na.rm = T)) %>%
-  ggplot(aes(species, body_mass, xend = species, yend = body_mass)) + 
+  summarise(body_mass = mean(body_mass_g, na.rm = T)) %>%
+  ggplot(aes(species, body_mass_g, xend = species, yend = body_mass_g)) + 
   theme_clean() +
   coord_flip() +
   labs(caption = "@PalmerPenguins",
@@ -975,7 +976,7 @@ library(gapminder)
 ::: {.column width="50%"}
 
 ```{r themes1}
-penguins %>% ggplot(aes(bill_len, bill_dep, col = species)) + 
+penguins %>% ggplot(aes(bill_length_mm, bill_depth_mm, col = species)) + 
   geom_point() +
   theme_classic()
 ```
@@ -985,7 +986,7 @@ penguins %>% ggplot(aes(bill_len, bill_dep, col = species)) +
 ::: {.column width="50%"}
 
 ```{r themes2}
-penguins %>% ggplot(aes(bill_len, bill_dep, col = species)) + 
+penguins %>% ggplot(aes(bill_length_mm, bill_depth_mm, col = species)) + 
   geom_point() +
   theme_dark()
 ```
@@ -1023,7 +1024,7 @@ penguins %>% ggplot(aes(bill_len, bill_dep, col = species)) +
 ##
 
 ```{r themes3, fig.height=6}
-penguins %>% ggplot(aes(bill_len, bill_dep, col = species)) + 
+penguins %>% ggplot(aes(bill_length_mm, bill_depth_mm, col = species)) + 
   geom_point() +
   theme(text = element_text(family = "Ink Free", size = 40, face = "bold"))
 ```
@@ -1031,7 +1032,7 @@ penguins %>% ggplot(aes(bill_len, bill_dep, col = species)) +
 ##
 
 ```{r themes4, fig.height=6}
-penguins %>% ggplot(aes(bill_len, bill_dep, col = species)) + 
+penguins %>% ggplot(aes(bill_length_mm, bill_depth_mm, col = species)) + 
   geom_point() +
   theme(legend.position = "bottom", axis.text.y = element_blank())
 ```

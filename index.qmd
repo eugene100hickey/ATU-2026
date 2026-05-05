@@ -32,7 +32,6 @@ include-in-header:
 
 [**Week Four - Getting and Cleaning Data**](https://atu-2026.netlify.app/week-04/#/title){target="_blank"}
 
-
 [**Week Five - Data Visualisation**](https://atu-2025.netlify.app/week-05/){target="_blank"}
 :::
 :::::
@@ -50,7 +49,7 @@ include-in-header:
 
 - [Week Three Summary - April 25<sup>th</sup>](https://youtu.be/dmQpCfzyias){target="_blank"}
 
-- [Week Four Summary - May <sup>rd</sup>](){target="_blank"}
+- [Week Four Summary - May <sup>rd</sup>](https://youtu.be/422UKOz0bco){target="_blank"}
 
 - [Week Five Class - May <sup>th</sup>](){target="_blank"}
 
