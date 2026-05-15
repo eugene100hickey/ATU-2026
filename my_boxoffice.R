@@ -3,7 +3,7 @@ library(rvest)
 
 my_boxoffice <- function(my_date = Sys.Date()-7) {
   
-  dates <- my_date |> 
+  dates <- my_date %>%
     str_replace_all("-", "/")
   
   my_xml <- "tbody .data , .chart-desktop a"
