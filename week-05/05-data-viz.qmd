@@ -1119,11 +1119,11 @@ ggplot(ToothGrowth, aes(factor(dose), len)) + # Using our new theme
 
 - make a lollipop plot of the 12 *Primates* total sleep times from the *msleep* dataset in *ggplot2*
 
-- install the *boxoffice* package from github (`devtools::install_github("jacobkap/boxoffice"`). Use the following commands to downloads box office receipts from this day last week:
+- access a function we wrote from github (`source("https://github.com/eugene100hickey/ATU-2026/raw/refs/heads/main/my_boxoffice.R")`). Use the following commands to downloads box office receipts from this day last week:
 
 ```
 boxoffice_date <- Sys.Date()-7
-movies <- boxoffice(boxoffice_date) %>% 
+movies <- my_boxoffice(boxoffice_date) %>% 
      mutate(gross = gross / 1e3,
             movie_name = movie,
             movie = abbreviate(movie)) %>% 
