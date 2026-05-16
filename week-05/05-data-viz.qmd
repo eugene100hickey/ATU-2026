@@ -1154,7 +1154,7 @@ death_prob %>%
 
 - You'll need the _tidyverse_ library and the _dslabs_ library (install from CRAN by _install.packages("dslabs")_)
 
-- Get the dataset using _data("death_prob")_
+- Use the dataset _death_prob_
 
 - You'll need to call ggplot setting _data = death_prob_
 

@@ -51,7 +51,7 @@ include-in-header:
 
 - [Week Four Summary - May 2<sup>nd</sup>](https://youtu.be/422UKOz0bco){target="_blank"}
 
-- [Week Five Summary - May 16<sup>th</sup>](){target="_blank"}
+- [Week Five Summary - May 16<sup>th</sup>](https://youtu.be/rcjY5Fb9OP8){target="_blank"}
 
 <!-- -   [Week 4 - Quiz](https://youtu.be/5MEm0D1s3FY){target="_blank"} -->
 
